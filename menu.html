@@ -69,8 +69,11 @@
                     </li>
                   </ul>
 
-                  <button type="button" id="reserve" class="show-modal btn btn-success">
+                  <!--<button type="button" id="reserve" class="show-modal btn btn-success">
                     Reserve a Table
+                  </button>-->
+                  <button type="button" id="commande" class="show-modal btn btn-success">
+                    Commandez
                   </button>
                 </div>
               </div>
@@ -386,6 +389,16 @@
     </footer>
 
     <!-- modal  -->
+    <!--<div class="container">
+      <form>
+        <p>Bienvenue</p>
+        <input type="text" placeholder="Nom"><br>
+        <input type="phone" placeholder="Numéro de téléphone">
+        <input type="text" placeholder="Liste des plats">
+        <input type="text" placeholder="Quantité">
+        <input type="text" placeholder="Mode de paiement">
+      </form>
+    </div>-->
     <div class="model hidden">
       <div class="booking">
         <form
@@ -393,30 +406,16 @@
           role="form"
           action="#"
           method="post">
-        <p>Reservation</p>
+              <p>Welcome</p>
           <div class="col-lg-6 col-12">
-            <label for="name" class="form-label">Full Name</label>
+            <label for="name" class="form-label">Name</label>
 
             <input
               type="text"
               name="name"
               id="name"
               class="form-control"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-
-          <div class="col-lg-6 col-12">
-            <label for="email" class="form-label">Email Address</label>
-
-            <input
-              type="email"
-              name="email"
-              id="email"
-              pattern="[^ @]*@[^ @]*"
-              class="form-control"
-              placeholder="your@email.com"
+              placeholder="Enter your name"
               required
             />
           </div>
@@ -428,23 +427,49 @@
               type="telephone"
               name="phone"
               id="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
               class="form-control"
-              placeholder="123-456-7890"
+              placeholder="123-456-789"
             />
           </div>
 
           <div class="col-lg-6 col-12">
-            <label for="people" class="form-label"
-              >Number of persons</label
-            >
+            <label for="listofdishes" class="form-label">List of Dishes</label>
+
+            <input
+              type="text"
+              name=""
+              id=""
+              pattern="[^ @]*@[^ @]*"
+              class="form-control"
+              placeholder="list of dishes"
+              required
+            />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <label for="quantity" class="form-label">Quantity</label>
+
+            <input
+              type="text"
+              name="text"
+              id="text"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              class="form-control"
+              placeholder="Quantity"
+            />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <label for="payment" class="form-label">Mode of Payment</label
+>
 
             <input
               type="text"
               name="people"
               id="people"
               class="form-control"
-              placeholder="12 persons"
+              placeholder=" Mode of payment"
             />
           </div>
 
@@ -460,7 +485,7 @@
             />
           </div>
 
-          <div class="col-lg-6 col-12">
+          <!--<div class="col-lg-6 col-12">
             <label for="time" class="form-label">Time</label>
 
             <select
@@ -488,11 +513,11 @@
               name="message"
               placeholder=""
             ></textarea>
-          </div>
+          </div>-->
 
           <div class="col-lg-4 col-12 ms-auto">
             <button type="submit" class="btn btn-primary close-modal form-control" onclick="alert('submitted! have a great day')">
-              Submit Request
+              Submit
             </button>
           </div>
         </form>
