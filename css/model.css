@@ -1,16 +1,78 @@
-/* CLASSES TO MAKE MODAL WORK */
+/**{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body{
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial, sans-serif;
+}
+
+p{
+  color: white;
+  font-weight: 500;
+  opacity: .7;
+  font-size: 1.4rem;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}*/
+
+
+
+/*CLASSES TO MAKE MODAL WORK */
 .hidden {
   display: none;
 }
 .model {
   position: fixed;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  ::placeholder{
+    color: white;
+  }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  background-color: rgb(255, 255, 255);
+  background: white;
   padding: 5rem;
   border-radius: 2rem;
-  box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: gray;
   z-index: 10;
+  margin: 5px;
+
+  input[type="button"]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 150px;
+  }
+}
+
+input[type="button"]{
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.booking-form p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #cda45e;
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+.texta {
+  margin-bottom: 20px;
 }
